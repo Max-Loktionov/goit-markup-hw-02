@@ -86,6 +86,10 @@ ul {
   text-transform: uppercase;
 }
 
+.footer {
+  text-decoration: none;
+}
+
 /* Первичный цвет текста*/
 /* color: #757575;
 
