@@ -1,6 +1,11 @@
+:root {
+  --primary-text-color: #757575;
+  --primary-title-color: #212121;
+  --accent-color: #2196f3;
+}
 body {
   background-color: #e5e5e5;
-  color: #757575;
+  color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -15,7 +20,7 @@ ul {
 /* site-nav */
 
 .logo {
-  color: #2196f3;
+  color: var(--accent-color);
   font-family: Raleway, cursive;
   font-size: 26px;
   font-weight: 700;
@@ -29,8 +34,12 @@ ul {
   color: #ffffff;
 }
 
+footer .logo {
+  -webkit-text-stroke: 1px #000000;
+}
+
 .site-nav .link {
-  color: #212121;
+  color: var(--primary-title-color);
 
   font-weight: 500;
   font-size: 14px;
@@ -41,6 +50,9 @@ ul {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: #2196f3;
+}
+.site-nav .link.current {
+  color: var(--accent-color);
 }
 
 .studio-contacts a {
@@ -57,8 +69,10 @@ ul {
   color: #2196f3;
 }
 
+/* hero */
 /* hero-title */
 .hero-title {
+  color: #ffffff;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -67,36 +81,64 @@ ul {
   text-transform: uppercase;
 }
 .button {
+  background-color: #2196f3;
+  color: #ffffff;
   cursor: pointer;
+}
+.button:hover {
+  stroke: #000000;
 }
 
 /*class="section-title"  */
 .section-title {
+  color: var(--primary-title-color);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
 
-/* soft-skills-title */
-
-.soft-skills .title {
-  color: #212121;
+/* soft-skills */
+.section .title {
+  color: var(--primary-title-color);
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
+/* наша команда */
+.section .name {
+  color: var(--primary-title-color);
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  -webkit-text-stroke: 1px #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
+/* footer */
 .footer {
   text-decoration: none;
 }
 
-/* Первичный цвет текста*/
-/* color: #757575;
+/* Первичный цвет текста color: #757575; */
 
+/* Вторичный цвет текста  color: #212121;   */
 
-
-/* Вторичный цвет текста  color: #212121 */
 /* Белый текст  color: #ffffff;  */
+
 /* Первичный цвет фона  color: #E5E5E5; */
-/* Вторичный цвет фона  color: #2F303A */
+
+/* Вторичный цвет фона  color: #2F303A; */
+
 /* Акцент  color: #2196f3; */
+
+/* portfolio фильтры - 5 color: #F5F4FA */
+
+/* logo+ logo stroke footer  color: #000000; */
+
+/* portfolio карточки-9 color: #EEEEEE */
+
+/* полоса под хедер -1 color: #ECECEC; */
+
+/* #188CE8 */
