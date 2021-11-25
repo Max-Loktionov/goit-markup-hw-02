@@ -16,19 +16,21 @@
 /* Вторичный цвет фота #F5F4FA */
 /* Темный цвет фона #2F303A */
 
-/* Второй шрифт 'Raleway'    */
+/* Второй шрифт 'Raleway', sans-serif    */
 
 body {
   background-color: var(--primary-back);
   color: var(--primary-text-color);
 
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.71;
 }
 
-ul {
+ul,
+li,
+ol {
   list-style: none;
 }
 
@@ -36,7 +38,7 @@ ul {
 
 .logo {
   color: var(--accent-color);
-  font-family: Raleway, cursive;
+  font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
@@ -46,7 +48,7 @@ ul {
   color: #000000;
 }
 
-.site-nav .link {
+.site-nav-link {
   color: var(--primary-title-color);
 
   font-weight: 500;
@@ -55,15 +57,15 @@ ul {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav-link:hover,
+.site-nav-link:focus {
   color: var(--accent-color);
 }
-.site-nav .link.current {
+.site-nav-link.current {
   color: var(--accent-color);
 }
 
-.studio-contacts .link {
+.studio-contacts-link {
   list-style: none;
   color: var(--primary-text-color);
   font-weight: 500;
@@ -72,8 +74,8 @@ ul {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.studio-contacts a:hover,
-.studio-contacts a:focus {
+.studio-contacts-link:hover,
+.studio-contacts-link:focus {
   color: #2196f3;
 }
 
@@ -155,7 +157,7 @@ ul {
 }
 .section .name {
   color: var(--primary-title-color);
-  font-family: Roboto;
+
   font-weight: 500;
   font-size: 16px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -164,6 +166,9 @@ ul {
 /* footer */
 .footer {
   background-color: var(--dark-back);
+}
+
+address {
   font-style: normal;
 }
 
@@ -171,53 +176,48 @@ ul {
   color: #ffffff;
 }
 
-.footer .street {
+.studio-contacts-link-street {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-.footer .link {
+.studio-contacts-link-street:hover {
+  color: #2196f3;
+}
+
+.footer.studio-contacts-link {
   color: rgba(255, 255, 255, 0.6);
 }
 
 /* Портфолио */
 
-.portfolio .cards {
+.portfolio-link {
   text-decoration: none;
 }
-.cards-title {
+.portfolio-title {
   color: var(--primary-title-color);
-  font-family: Roboto;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.cards-text {
+.portfolio-text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 30px;
 }
 
 /* Первичный цвет текста color: #757575; */
-
 /* Вторичный цвет текста  color: #212121;   */
-
 /* Белый текст  color: #ffffff;  */
 
 /* Первичный цвет фона  color: #E5E5E5; */
-
 /* Вторичный цвет фона  color: #2F303A; */
 
 /* Акцент  color: #2196f3; */
-
 /*    hover color: 188CE8 */
 
 /* portfolio фильтры - 5 color: #F5F4FA */
-
 /* logo+ logo stroke footer  color: #000000; */
-
 /* portfolio карточки-9 color: #EEEEEE */
-
 /* полоса под хедер -1 color: #ECECEC; */
-
 /* #188CE8 */
